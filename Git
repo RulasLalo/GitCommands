@@ -1,0 +1,70 @@
+Crear nombre de usuario Git:
+git config --global user.name "usuario"
+
+Correo electrónico de usuario en Git:
+git config --global user.email "email"
+
+Ver usuarios y correos de usuario:
+git config --global -l
+
+Crear nuestro primer repositorio:
+git init
+
+Ver el estado de nuestros archivos:
+git status
+
+Darle permiso a Git para gestionar TODOS nuestros archivos:
+git add .
+
+Nos permite hacer un commit:
+git commit -m ["mensaje descriptivo"]
+
+Nos permite ver que se modificó en el archivo, comparándolo con el último commit:
+git diff
+
+Revierte los cambios hecho al último commit:
+git checkout
+
+Vemos las listas de cambios:
+git log
+
+Quitar algún elemento que se encuentre en el Stage:
+git restore [nombre del archivo]
+
+Para poner un alias hacemos: git config --global alias.[nombre del alias] "comando"
+
+Cambia el nombre de un archivo:
+git mv [nombre actual] [nuevo nombre]
+
+Borrar el archivo:
+git rm [nombre del archivo]
+
+Recuperar log del archivo borrado:
+git reset --soft [código del commit]
+
+Recuperar archivo borrado:
+git reset --hard [código del último commit antes de que se borrara el archivo]
+
+Ver histórico de commits y resets:
+git reflog
+
+Creamos una nueva rama
+git branch [nombre de la rama hija]
+
+Cambiar de rama
+git checkout [nombre de la rama] 
+
+Merge (debemos estar en la rama master)
+git merge [nombre de la rama hija]
+
+Borrar rama
+git branch -d [nombre de la rama hija]
+
+Posicionarnos en la rama una vez que se crea
+git checkout -b [nombre de la rama hija]
+
+Bajar cambios de GitHub
+git pull
+
+Subir rama a GitHub
+git push origin main [nombre de la rama hija]
