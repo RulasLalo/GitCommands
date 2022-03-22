@@ -66,5 +66,8 @@ git checkout -b [nombre de la rama hija]
 Bajar cambios de GitHub
 git pull
 
-Subir rama a GitHub
+Subir proyecto a GitHub
+git remote add origin https://github.com/RulasLalo/nombre-repositorio-nuevo.git
+
+Actualizar cambios de Git a GitHub
 git push origin main [nombre de la rama hija]
